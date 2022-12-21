@@ -1,0 +1,14 @@
+.footer{
+    color: white;
+    background-color: rgb(74, 67, 67);
+}
+.footer ul li{
+    display: inline-block;
+   
+    margin: 10px;
+    
+}
+.redes{
+    color: white;
+    text-decoration: none;
+}
