@@ -1,6 +1,7 @@
 import React from "react";
 import { app } from "./fb";
 import './estilos/login.css'
+import logo from '../img/movie_max.png'
 
 const Login = (props) => {
   const [isRegistrando, setIsRegistrando] = React.useState(false);
@@ -35,18 +36,21 @@ const Login = (props) => {
   };
   return (
     <div className="logueo">
-      <h1> {isRegistrando ? "Regístrate..." : "Iniciar Sesion..."}</h1> <br></br>
+      <img src={logo} className="logo" alt=""/>
+      <h1> {isRegistrando ? "Regístrate" : "Iniciar Sesion"}</h1> <br></br>
       <form onSubmit={submitHandler}>
-        <label htmlFor="emailField"> Correo </label> <br></br>
-        <input type="email" id="emailField" /> <br></br>
-        <label htmlFor="passwordField"> Contraseña </label> <br></br>
-        <input type="password" id="passwordField" /> <br></br>
-        <button type="submit">
+        <label className="letra" htmlFor="nameField"> Nombre </label> <br></br>
+        <input className="nombre" type="name" id="nameField" /> <br></br>
+        <label className="letra" htmlFor="emailField"> Correo </label> <br></br>
+        <input className="correo" type="email" id="emailField" /> <br></br>
+        <label className="letra" htmlFor="passwordField"> Contraseña </label> <br></br>
+        <input className="contraseña" type="password" id="passwordField" /> <br></br>
+        <button className="btn" type="submit">
           {" "}
           {isRegistrando ? "Regístrate" : "Inicia sesión"}{" "}
         </button> 
       </form>
-      <button onClick={() => setIsRegistrando(!isRegistrando)}>
+      <button className="btn" onClick={() => setIsRegistrando(!isRegistrando)}>
         {isRegistrando
           ? "¡Inicia sesión!"
           : "¡Regístrate!"}

@@ -1,37 +1,19 @@
-*{
-    text-align: center;
-}
-.logueo{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.editar{
+    height: 300px;
+    width: 400px;
     background-color: rgb(216, 115, 242);
     padding: 30px;
     margin-top: 10px;
-    margin-left: 400px;
+    margin-left: 450px;
     border-radius: 20px;
 }
-.logo{
-    height: 100px;
-    border-radius: 100%;
-}
-
-.letra{
-    font-weight: bold;
-}
-
-.nombre, .correo, .contraseña{
+.nombre, .correo{
     margin: 10px;
     border: none;
     border-radius: 7px;
     height: 30px;
     background-color:beige;
 }
-
 .btn{
     background-color: burlywood; 
     border-radius: 7px;
@@ -43,3 +25,6 @@
     display: inline-block;
     font-weight: bold;
  }
+.labels{
+    font-weight: bold;
+}

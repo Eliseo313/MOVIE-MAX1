@@ -14,7 +14,7 @@ export const Header = () => {
             <NavLink  to="/home">
                  <img src={logo} className="logo" alt=""/>
             </NavLink>
-            <h1 className='nombre'> MOVIE MAX</h1>
+            <h1 className='nombreApp'> MOVIE MAX</h1>
             <input type="checkbox" id="check" /> 
             <label for="check" className="mostrar-menu">
                 &#8801;
@@ -23,10 +23,11 @@ export const Header = () => {
                 <NavLink to="/home" className='opciones-menu'>Inicio</NavLink>
                 <NavLink to="/series" className='opciones-menu'>Series</NavLink>
                 <NavLink to="/peliculas" className='opciones-menu'>Peliculas</NavLink>
-                <button onClick={cerrarSesion}>Cerrar Sesión</button>
+                <NavLink to="/" className='opciones-menu'>Cambiar de Perfil</NavLink>
+                <button onClick={cerrarSesion}><NavLink className={"botonCerrarSesion"} to={"/"}>Cerrar Sesión</NavLink></button> 
                 <form className='formulario' role="search">
-                    <input type="search" placeholder="Titulo"/>
-                    <button type="submit">Buscar</button>
+                    <input className='buscar' type="search" placeholder="Titulo"/>
+                    <button  className='botonBuscar' type="submit">Buscar</button>
                 </form> 
                 <label for="check" className="esconder-menu">
                     &#215;

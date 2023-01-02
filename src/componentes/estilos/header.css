@@ -12,12 +12,30 @@
     justify-content: space-between;
     align-items: center;
 }
+.botonBuscar, .botonCerrarSesion{
+    background-color:rgb(216, 115, 242); 
+    border-radius: 7px;
+    color: black;
+    padding: 5px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   
+ }
+.buscar{
+    margin: 10px;
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+    background-color:beige;
+}
 
 .logo{
     height: 100px;
     border-radius: 100%;
 }
-.nombre{
+.nombreApp{
     text-transform: uppercase;
     color: white;
     font-weight: 200;
